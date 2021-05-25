@@ -17,7 +17,7 @@ interface Food {
   handleDelete: (id: number) => void;
 }
 
-const Food = (props: Food ) => {
+const Food: React.FC<Food> = (props: Food ) => {
     const { available } = props.food;
 
     const [ isAvailable, setIsAvailable ] = useState(available)
