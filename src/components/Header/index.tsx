@@ -9,7 +9,7 @@ interface Header {
 
 function Header(props: Header) {
   const { openModal } = props;
-  console.log(props)
+
   return (
     <Container>
       <header>
