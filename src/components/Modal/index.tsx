@@ -1,15 +1,10 @@
 import { useEffect, useState } from 'react';
 import ReactModal from 'react-modal';
 
-interface ModalProps {
-  props: object,
+export interface ModalProps {
   isOpen: boolean,
   setIsOpen: () => void,
   children: object
-}
-
-interface ReactModalPros {
-  onRequestClose: boolean
 }
 
 function Modal (props: ModalProps) {
