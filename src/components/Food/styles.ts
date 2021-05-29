@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 
 interface Container {
-  available: Boolean
+  available?: Boolean
 }
 
 export const Container = styled.div<Container>`

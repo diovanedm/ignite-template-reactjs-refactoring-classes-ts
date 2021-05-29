@@ -7,6 +7,7 @@ import Input from '../Input';
 import { FormHandles } from '@unform/core';
 
 interface AddFood {
+  id: number;
   image: string;
   name: string;
   price: string;

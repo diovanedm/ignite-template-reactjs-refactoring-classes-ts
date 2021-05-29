@@ -7,6 +7,7 @@ import Modal, { ModalProps } from '../Modal/index'
 import { FormHandles } from '@unform/core';
 
 interface AddFood {
+  id: number
   image: string;
   name: string;
   price: string;
@@ -16,7 +17,7 @@ interface AddFood {
 interface ModalAddFoodProps {
   isOpen: boolean;
   setIsOpen: () => void;
-  handleAddFood: (data: AddFood) => void;
+  handleAddFood: (data: AddFood) => Promise<void>;
 }
 
 
